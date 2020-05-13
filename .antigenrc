@@ -1,0 +1,32 @@
+antigen use oh-my-zsh
+
+# 通用包
+antigen bundle git
+antigen bundle pip
+antigen bundle rupa/z z.sh
+antigen bundle Vifon/deer
+
+# 语法高亮功能
+# antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zdharma/fast-syntax-highlighting			# 这个略优于上面一个
+
+# 代码提示功能
+antigen bundle zsh-users/zsh-autosuggestions
+
+# 自动补全功能
+antigen bundle zsh-users/zsh-completions
+
+# 加载主题
+# antigen theme robbyrussell
+antigen theme theunraveler
+# 保存更改
+antigen apply
+
+
+# 别名
+alias cls="clear"
+
+
+# 指定文件用特定程序打开
+alias -s txt=vim
+
